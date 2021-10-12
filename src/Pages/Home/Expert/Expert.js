@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Expert = () => {
+
+const Expert = ({exp}) => {
+    console.log(exp)
     return (
         <div>
-            <h2>Expert</h2>
+            
+            <h3>Name</h3>
+           
         </div>
     );
 };
