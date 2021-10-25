@@ -3,19 +3,19 @@ import { Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Service = ({service}) => {
-    const {id, name, price, description, img} =service;
+    const {_id, Name, Price, Description, Image} =service;
     return (
         <div className="my-5">
             <Col>
                 <Card>
-                    <Card.Img variant="top" src={img} />
+                    <Card.Img variant="top" src={Image} />
                     <Card.Body>
-                    <Card.Title>Name: {name}</Card.Title>
-                    <Card.Title>Price: {price}</Card.Title>
+                    <Card.Title>Name: {Name}</Card.Title>
+                    <Card.Title>Price: {Price}</Card.Title>
                     <Card.Text>
-                    {description}
+                    {Description}
                     </Card.Text>
-                    <Link to = {`/booking/${id}`}><button>Book {name}</button></Link>
+                    <Link to = {`/booking/${_id}`}><button>Book {Name}</button></Link>
                     </Card.Body>
                 </Card>
                 </Col>
